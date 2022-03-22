@@ -45,6 +45,7 @@ justify-content: center;
 `
 const Card = styled.div`
 width: 16rem;
+box-sizing: border-box;
 justify-content: center;
 border-radius: 5px;
 background-color: #ffffff;
@@ -62,11 +63,11 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
     width: 100%;
     padding-bottom: 0.5rem;
     height: auto;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem auto;
   }
 `
 const Title = styled.h1`
-font-size: 20px;
+font-size: 4vmin;
 font-weight: bold;
 margin: 1.5rem 0 0.5rem 0;
 @media only screen and (max-width: 900px) {

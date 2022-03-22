@@ -1,7 +1,4 @@
-import React from 'react'
 import styled from 'styled-components';
-import { MenuButton, IconButton} from '@chakra-ui/react';
-import { HamburgerIcon,} from '@chakra-ui/icons'
 
    const MenuContainer = styled.div`
    width: 100%;
@@ -37,6 +34,7 @@ const MenuList2 = styled.div`
   display: none;
  }
 `
+
 const MenuList1 = styled.div`
 display: flex;
 width: 100%;
@@ -48,6 +46,7 @@ margin-left: -15rem;
   display: none;
  }
 `
+
 const MenuItem = styled.a`
 background: rgb(70,97,246);
 background: radial-gradient(circle, rgba(70,97,246,1) 0%, rgba(21,71,150,1) 100%);
@@ -55,9 +54,12 @@ color: #ffffff;
 margin-left: 2rem;
 padding: 1px 10px;
 border-radius: 5px;
+cursor: pointer;
+transition: ease-in-out;
+:hover {
+transform: scale(1.2);
+}
 `
-
-
 
 function NavHeader()  {
 
@@ -84,6 +86,5 @@ function NavHeader()  {
   </MenuContainer>
   )
 }
-
 
 export default NavHeader

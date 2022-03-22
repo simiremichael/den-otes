@@ -17,11 +17,10 @@ justify-content: center;
 }
 `
 const LeftContainer = styled.div`
-width: 50%;
+width: 57%;
 height: 25rem;
-padding: 1rem;
+padding: 1rem 1rem 1rem 0;
 margin: 4rem 0 0 0;
-
 @media only screen and (max-width: 900px) {
   width: 100%;
   justify-content: center;
@@ -32,25 +31,26 @@ margin: 4rem 0 0 0;
 `
 const RightContainer = styled.div`
 width: 40%;
-height: 23rem;
+height: 24rem;
+box-sizing: border-box;
 border-radius: 5px;
-padding: 1rem;
-margin: 5rem 0 0 2rem;
+padding: 1rem 0;
+margin: 5rem 0 0 0;
 background-color: #ffffff;
 @media only screen and (max-width: 900px) {
   width: 100%;
   justify-content: center;
 padding: 0;
-margin: 0.5rem 1rem 0.5rem 1rem;
+margin: 1rem 1rem 0.5rem 1rem;
 height: 50%;
  }
  @media only screen and (min-width: 1100px) {
-  width: 30%;
+  width: 35%;
  }
 `
 const Header = styled.h1`
-margin: 1rem 1rem 0 1rem;
-font-size: 20px;
+margin: 1.5rem 1rem 0 1rem;
+font-size: 4vmin;
 font-weight: bold;
 @media only screen and (min-width: 1300px) {
   margin-top: 2rem;
@@ -58,11 +58,13 @@ font-weight: bold;
 `
 const Paragraph = styled.p`
 margin: 0rem 1rem;
+font-size: 2.2vmin
 `
 const Img = styled.img`
 width: 100%;
+height: 24rem;
 border-radius: 5px;
-align-self: center;
+margin: 0 auto;
 `
 
 function TopContainer() {
